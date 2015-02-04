@@ -1,6 +1,6 @@
 module MassiveRecord
   module ORM
-
+    debugger
     #
     # MassiveRecord Observer. Greatly influenced by ActiveRecord's
     # way of doing callbacks, thus should feel familiar to most people.
