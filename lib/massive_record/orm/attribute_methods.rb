@@ -7,7 +7,6 @@ module MassiveRecord
     module AttributeMethods
       extend ActiveSupport::Concern
       include ActiveModel::AttributeMethods      
-      include ActiveModel::MassAssignmentSecurity
 
       module ClassMethods
         def define_attribute_methods

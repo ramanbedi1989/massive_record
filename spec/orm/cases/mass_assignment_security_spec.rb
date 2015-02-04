@@ -26,7 +26,7 @@ describe "mass assignment security" do
       it "sets attributes accessible" do
         restore_mass_assignment_security_policy_after Person do
           Person.class_eval do
-            attr_accessible :age
+            #attr_accessible :age
           end
 
           Person.accessible_attributes.should include 'age'
@@ -53,7 +53,7 @@ describe "mass assignment security" do
         it "sets age with mass assignment" do
           restore_mass_assignment_security_policy_after Person do
             Person.class_eval do
-              attr_accessible :age
+              #attr_accessible :age
             end
 
             Person.new(:age => 33).age.should eq 33
@@ -63,7 +63,7 @@ describe "mass assignment security" do
         it "does not set name with mass assignment" do
           restore_mass_assignment_security_policy_after Person do
             Person.class_eval do
-              attr_accessible :age
+              #attr_accessible :age
             end
 
             Person.new(:name => 'Thorbjorn').name.should be_nil
