@@ -1,6 +1,6 @@
+require 'observer'
 module MassiveRecord
   module ORM
-    require 'observer'
     #
     # MassiveRecord Observer. Greatly influenced by ActiveRecord's
     # way of doing callbacks, thus should feel familiar to most people.
