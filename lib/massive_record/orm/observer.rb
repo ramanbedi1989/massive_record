@@ -1,4 +1,4 @@
-require 'observer'
+require 'rails/observers/version'
 module MassiveRecord
   module ORM
     #
